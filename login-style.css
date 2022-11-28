@@ -166,4 +166,22 @@ legend {
         height: 600px;
     }
 }
-
+@media (max-width: 720px){
+    .main {
+        height: fit-content;
+        width: 400px;
+        flex-direction: column;
+    }
+    .section-1 {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        height: 600px;
+        width: 400px;    
+    }
+    .section-2 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        height: 600px;
+        width: 400px;
+    }
+}
