@@ -10,13 +10,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 695px;
+    height: fit-content;
     
 }
 .main {
     display: flex;
     width: 1000px;
     height: 600px;
+    margin-top: 47px;
+    margin-bottom: 47px;
     border-radius: 15px;
     box-shadow:rgb(0 0 0 / 35%) 0px 5px 15px;
 }
@@ -140,4 +142,21 @@ legend {
 }
 .field button:hover {
     background-color: rgb(104, 23, 180);
+}
+@media (max-width: 970px){
+    .main {
+        height: fit-content;
+        width: 500px;
+        flex-direction: column;
+    }
+    .section-1 {
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+        height: 600px;    
+    }
+    .section-2 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+        height: 600px;
+    }
 }
